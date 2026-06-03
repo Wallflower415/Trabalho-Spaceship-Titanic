@@ -123,11 +123,12 @@ Foram aplicados dois algoritmos supervisionados:
 
 | Modelo | Acurácia (CV) | Acurácia (Teste) |
 |---|---|---|
-| Logistic Regression | — | — |
-| KNN (default) | — | — |
-| KNN (GridSearchCV) | — | — |
+| Logistic Regression | 79,49% | 79,36% |
+| KNN (default) | 76,79% | 76,77% |
+| KNN (GridSearchCV) | 78,49% | 78,09% |
 
-**Melhores hiperparâmetros encontrados pelo GridSearchCV:** —
+**Melhores hiperparâmetros encontrados pelo GridSearchCV:**
+`n_neighbors=11`, `weights='uniform'`, `metric='euclidean'`
 
 ---
 
@@ -137,6 +138,7 @@ Foram aplicados dois algoritmos supervisionados:
 - A engenharia de atributos, especialmente `TotalSpend` e a extração de `Deck`/`Side` da coluna `Cabin`, enriqueceu significativamente a representação dos dados
 - Passageiros em CryoSleep apresentaram padrão de transporte distinto, sendo uma das variáveis mais relevantes
 - O GridSearchCV permitiu encontrar a melhor combinação de hiperparâmetros para o KNN de forma sistemática
+- A Regressão Logística superou o KNN otimizado, indicando que a fronteira de decisão deste problema tem caráter predominantemente linear
 - Como melhoria futura, algoritmos como `RandomForestClassifier` ou `GradientBoostingClassifier` poderiam ser explorados para ganhos adicionais de desempenho
 
 ---
