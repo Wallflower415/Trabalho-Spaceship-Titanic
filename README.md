@@ -2,7 +2,7 @@
 
 Atividade Avaliativa Final — Disciplina: Inteligência Computacional
 Curso Superior de Tecnologia em Ciência de Dados — Fatec Jundiaí
-Professor: Me. Mateus Guilherme Fuini
+Professor:  Mateus Guilherme Fuini
 
 ---
 
